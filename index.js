@@ -4,7 +4,7 @@ const app= express();
 const PORT= 5000;
 const fs=require('fs');
 
-app.get('/current_timestamp', function (request, response) {
+app.get('/timestamp', function (request, response) {
  response.send(`${new Date()}`);
  
  var write =fs.writeFile('./date-time.txt', `${new Date()}`, (err) => {
