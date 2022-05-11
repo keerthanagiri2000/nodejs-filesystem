@@ -1,10 +1,16 @@
 const express= require('express');
+const dotenv = require ('dotenv');
+const cors = require ('cors');
+const fs = require('fs');
+
+dotenv.config();
 
 const app= express();
-const PORT= 5000;
-const fs=require('fs');
+const PORT= process.env.PORT;
+
 
 //1.write API endpoint which will create a text file in a particular folder
+app.use(cors());
 
 app.get('/timestamp', function (request, response) {
  response.send(`${new Date()}`);
