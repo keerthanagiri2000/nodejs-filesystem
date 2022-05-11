@@ -1,2 +1,3 @@
-Github repository url - https://github.com/keerthanagiri2000/timestamp_node
-Heroku url Endpoints 
+Github repository url - https://github.com/keerthanagiri2000/nodejs-filesystem
+Heroku url Endpoints  - 1) https://timestamp-nodejs.herokuapp.com/timestamp
+                        2) https://timestamp-nodejs.herokuapp.com/text-file

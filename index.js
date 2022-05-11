@@ -3,11 +3,12 @@ const dotenv = require ('dotenv');
 const cors = require ('cors');
 const fs = require('fs');
 
+
 dotenv.config();
 
 const app= express();
 const PORT= process.env.PORT;
-
+console.log(process.env);
 
 //1.write API endpoint which will create a text file in a particular folder
 app.use(cors());
