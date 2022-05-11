@@ -4,7 +4,8 @@ const app= express();
 const PORT= 5000;
 const fs=require('fs');
 
-//
+//1.write API endpoint which will create a text file in a particular folder
+
 app.get('/timestamp', function (request, response) {
  response.send(`${new Date()}`);
  
@@ -12,6 +13,8 @@ app.get('/timestamp', function (request, response) {
     console.log("created file !!!");
    })
 });
+
+//2.write API endpoint to retrieve all the text file in the particular folder
 
 app.get('/text-file', function (request, response){
    
